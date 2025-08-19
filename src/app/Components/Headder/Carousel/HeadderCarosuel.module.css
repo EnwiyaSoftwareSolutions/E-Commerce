@@ -1,0 +1,22 @@
+.headderMainContainer{
+    /* background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    z-index: 0; */
+}
+.headderCarouselContainer{  
+  width:90vw;
+
+}
+
+.headderCardContainer{
+    height: 400px;
+    align-items: center;
+
+}
+
+
+

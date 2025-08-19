@@ -1,0 +1,325 @@
+[
+  {
+    "name": "Hydrating Facial Cleanser",
+    "description": "Gentle cleanser for all skin types.",
+    "price": 18.99,
+    "category": "Skincare",
+    "brand": "GlowSkin",
+    "images": ["/images/cleanser1.jpg"],
+    "stock": 120,
+    "rating": 4.7,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a1", "comment": "Very gentle!", "rating": 5, "date": "2025-08-01T10:00:00Z"}
+    ],
+    "ingredients": ["Water", "Glycerin", "Aloe Vera"],
+    "tags": ["hydrating", "gentle"],
+    "isFeatured": true,
+    "createdAt": "2025-08-01T09:00:00Z"
+  },
+  {
+    "name": "Matte Lipstick",
+    "description": "Long-lasting matte lipstick in red.",
+    "price": 12.5,
+    "category": "Makeup",
+    "brand": "ColorPop",
+    "images": ["/images/lipstick1.jpg"],
+    "stock": 80,
+    "rating": 4.5,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a2", "comment": "Love the color!", "rating": 5, "date": "2025-08-02T11:00:00Z"}
+    ],
+    "ingredients": ["Beeswax", "Pigment", "Vitamin E"],
+    "tags": ["matte", "red"],
+    "isFeatured": false,
+    "createdAt": "2025-08-02T09:00:00Z"
+  },
+  {
+    "name": "Vitamin C Serum",
+    "description": "Brightening serum for radiant skin.",
+    "price": 25.0,
+    "category": "Skincare",
+    "brand": "RadiantYou",
+    "images": ["/images/serum1.jpg"],
+    "stock": 60,
+    "rating": 4.8,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a3", "comment": "Skin looks brighter!", "rating": 5, "date": "2025-08-03T12:00:00Z"}
+    ],
+    "ingredients": ["Vitamin C", "Hyaluronic Acid"],
+    "tags": ["brightening", "serum"],
+    "isFeatured": true,
+    "createdAt": "2025-08-03T09:00:00Z"
+  },
+  {
+    "name": "Moisturizing Body Lotion",
+    "description": "Deeply moisturizing lotion for dry skin.",
+    "price": 15.75,
+    "category": "Body Care",
+    "brand": "SoftTouch",
+    "images": ["/images/lotion1.jpg"],
+    "stock": 150,
+    "rating": 4.6,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a4", "comment": "Great for winter!", "rating": 4, "date": "2025-08-04T13:00:00Z"}
+    ],
+    "ingredients": ["Shea Butter", "Coconut Oil"],
+    "tags": ["moisturizing", "body"],
+    "isFeatured": false,
+    "createdAt": "2025-08-04T09:00:00Z"
+  },
+  {
+    "name": "Volumizing Mascara",
+    "description": "Mascara for fuller lashes.",
+    "price": 10.99,
+    "category": "Makeup",
+    "brand": "LashUp",
+    "images": ["/images/mascara1.jpg"],
+    "stock": 90,
+    "rating": 4.4,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a5", "comment": "Lashes look amazing!", "rating": 5, "date": "2025-08-05T14:00:00Z"}
+    ],
+    "ingredients": ["Castor Oil", "Pigment"],
+    "tags": ["volumizing", "mascara"],
+    "isFeatured": true,
+    "createdAt": "2025-08-05T09:00:00Z"
+  },
+  {
+    "name": "Sunscreen SPF 50",
+    "description": "High protection sunscreen for all skin types.",
+    "price": 22.0,
+    "category": "Skincare",
+    "brand": "SunGuard",
+    "images": ["/images/sunscreen1.jpg"],
+    "stock": 110,
+    "rating": 4.9,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a6", "comment": "No white cast!", "rating": 5, "date": "2025-08-06T15:00:00Z"}
+    ],
+    "ingredients": ["Zinc Oxide", "Titanium Dioxide"],
+    "tags": ["sunscreen", "spf50"],
+    "isFeatured": true,
+    "createdAt": "2025-08-06T09:00:00Z"
+  },
+  {
+    "name": "Nourishing Hair Oil",
+    "description": "Oil for shiny and healthy hair.",
+    "price": 19.5,
+    "category": "Hair Care",
+    "brand": "HairGlow",
+    "images": ["/images/hairoil1.jpg"],
+    "stock": 70,
+    "rating": 4.3,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a7", "comment": "Hair feels soft!", "rating": 4, "date": "2025-08-07T16:00:00Z"}
+    ],
+    "ingredients": ["Argan Oil", "Jojoba Oil"],
+    "tags": ["nourishing", "hair"],
+    "isFeatured": false,
+    "createdAt": "2025-08-07T09:00:00Z"
+  },
+  {
+    "name": "Exfoliating Face Scrub",
+    "description": "Removes dead skin cells for a fresh look.",
+    "price": 14.25,
+    "category": "Skincare",
+    "brand": "FreshFace",
+    "images": ["/images/scrub1.jpg"],
+    "stock": 95,
+    "rating": 4.2,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a8", "comment": "Skin feels smooth!", "rating": 4, "date": "2025-08-08T17:00:00Z"}
+    ],
+    "ingredients": ["Walnut Shell", "Aloe Vera"],
+    "tags": ["exfoliating", "scrub"],
+    "isFeatured": false,
+    "createdAt": "2025-08-08T09:00:00Z"
+  },
+  {
+    "name": "Revitalizing Eye Cream",
+    "description": "Reduces puffiness and dark circles.",
+    "price": 28.0,
+    "category": "Skincare",
+    "brand": "BrightEyes",
+    "images": ["/images/eyecream1.jpg"],
+    "stock": 50,
+    "rating": 4.6,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1a9", "comment": "Eyes look refreshed!", "rating": 5, "date": "2025-08-09T18:00:00Z"}
+    ],
+    "ingredients": ["Caffeine", "Peptides"],
+    "tags": ["eye", "cream"],
+    "isFeatured": true,
+    "createdAt": "2025-08-09T09:00:00Z"
+  },
+  {
+    "name": "Clarifying Toner",
+    "description": "Balances skin and tightens pores.",
+    "price": 13.5,
+    "category": "Skincare",
+    "brand": "PureTone",
+    "images": ["/images/toner1.jpg"],
+    "stock": 100,
+    "rating": 4.1,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b0", "comment": "Pores look smaller!", "rating": 4, "date": "2025-08-10T19:00:00Z"}
+    ],
+    "ingredients": ["Witch Hazel", "Rose Water"],
+    "tags": ["toner", "clarifying"],
+    "isFeatured": false,
+    "createdAt": "2025-08-10T09:00:00Z"
+  },
+  {
+    "name": "Cream Blush",
+    "description": "Natural-looking cream blush for cheeks.",
+    "price": 11.99,
+    "category": "Makeup",
+    "brand": "Cheeky",
+    "images": ["/images/blush1.jpg"],
+    "stock": 85,
+    "rating": 4.5,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b1", "comment": "Blends well!", "rating": 5, "date": "2025-08-11T20:00:00Z"}
+    ],
+    "ingredients": ["Mineral Oil", "Pigment"],
+    "tags": ["blush", "cream"],
+    "isFeatured": false,
+    "createdAt": "2025-08-11T09:00:00Z"
+  },
+  {
+    "name": "Gentle Makeup Remover",
+    "description": "Removes makeup without irritation.",
+    "price": 9.5,
+    "category": "Skincare",
+    "brand": "CleanSweep",
+    "images": ["/images/remover1.jpg"],
+    "stock": 130,
+    "rating": 4.3,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b2", "comment": "No stinging!", "rating": 4, "date": "2025-08-12T21:00:00Z"}
+    ],
+    "ingredients": ["Micellar Water", "Chamomile"],
+    "tags": ["makeup", "remover"],
+    "isFeatured": false,
+    "createdAt": "2025-08-12T09:00:00Z"
+  },
+  {
+    "name": "Repairing Night Cream",
+    "description": "Repairs and nourishes skin overnight.",
+    "price": 30.0,
+    "category": "Skincare",
+    "brand": "NightGlow",
+    "images": ["/images/nightcream1.jpg"],
+    "stock": 40,
+    "rating": 4.7,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b3", "comment": "Skin feels soft!", "rating": 5, "date": "2025-08-13T22:00:00Z"}
+    ],
+    "ingredients": ["Retinol", "Vitamin E"],
+    "tags": ["night", "cream"],
+    "isFeatured": true,
+    "createdAt": "2025-08-13T09:00:00Z"
+  },
+  {
+    "name": "Refreshing Face Mist",
+    "description": "Instant hydration for tired skin.",
+    "price": 8.99,
+    "category": "Skincare",
+    "brand": "Mistify",
+    "images": ["/images/facemist1.jpg"],
+    "stock": 115,
+    "rating": 4.2,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b4", "comment": "Very refreshing!", "rating": 4, "date": "2025-08-14T23:00:00Z"}
+    ],
+    "ingredients": ["Rose Water", "Glycerin"],
+    "tags": ["mist", "refreshing"],
+    "isFeatured": false,
+    "createdAt": "2025-08-14T09:00:00Z"
+  },
+  {
+    "name": "Detangling Hair Spray",
+    "description": "Eases combing and reduces breakage.",
+    "price": 13.0,
+    "category": "Hair Care",
+    "brand": "TangleFree",
+    "images": ["/images/hairspray1.jpg"],
+    "stock": 75,
+    "rating": 4.3,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b5", "comment": "Works well!", "rating": 4, "date": "2025-08-15T08:00:00Z"}
+    ],
+    "ingredients": ["Silicone", "Aloe Vera"],
+    "tags": ["detangling", "hair"],
+    "isFeatured": false,
+    "createdAt": "2025-08-15T09:00:00Z"
+  },
+  {
+    "name": "Purifying Clay Mask",
+    "description": "Deep cleansing mask for oily skin.",
+    "price": 17.5,
+    "category": "Skincare",
+    "brand": "PureSkin",
+    "images": ["/images/claymask1.jpg"],
+    "stock": 65,
+    "rating": 4.5,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b6", "comment": "Skin feels clean!", "rating": 5, "date": "2025-08-16T09:00:00Z"}
+    ],
+    "ingredients": ["Kaolin Clay", "Green Tea"],
+    "tags": ["clay", "mask"],
+    "isFeatured": true,
+    "createdAt": "2025-08-16T09:00:00Z"
+  },
+  {
+    "name": "Tinted Moisturizer",
+    "description": "Light coverage moisturizer with SPF.",
+    "price": 21.0,
+    "category": "Makeup",
+    "brand": "GlowTint",
+    "images": ["/images/tintedmoist1.jpg"],
+    "stock": 105,
+    "rating": 4.4,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b7", "comment": "Perfect for summer!", "rating": 4, "date": "2025-08-17T10:00:00Z"}
+    ],
+    "ingredients": ["Titanium Dioxide", "Aloe Vera"],
+    "tags": ["tinted", "moisturizer"],
+    "isFeatured": false,
+    "createdAt": "2025-08-17T09:00:00Z"
+  },
+  {
+    "name": "Soothing Aftershave Balm",
+    "description": "Calms and hydrates post-shave skin.",
+    "price": 16.5,
+    "category": "Body Care",
+    "brand": "CalmSkin",
+    "images": ["/images/aftershave1.jpg"],
+    "stock": 60,
+    "rating": 4.3,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b8", "comment": "No irritation!", "rating": 4, "date": "2025-08-18T11:00:00Z"}
+    ],
+    "ingredients": ["Chamomile", "Aloe Vera"],
+    "tags": ["aftershave", "balm"],
+    "isFeatured": false,
+    "createdAt": "2025-08-18T09:00:00Z"
+  },
+  {
+    "name": "Brightening Sheet Mask",
+    "description": "Instant glow for dull skin.",
+    "price": 7.99,
+    "category": "Skincare",
+    "brand": "SheetGlow",
+    "images": ["/images/sheetmask1.jpg"],
+    "stock": 140,
+    "rating": 4.6,
+    "reviews": [
+      {"user": "64e1a1f1c1a1a1a1a1a1a1b9", "comment": "Skin glows!", "rating": 5, "date": "2025-08-19T12:00:00Z"}
+    ],
+    "ingredients": ["Niacinamide", "Vitamin C"],
+    "tags": ["sheet", "mask"],
+    "isFeatured": true,
+    "createdAt": "2025-08-19T09:00:00Z"
+  }
+]

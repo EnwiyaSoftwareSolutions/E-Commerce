@@ -1,0 +1,14 @@
+.bodyMainContainer{
+    background-color: #f5f5f5;
+    
+    padding: 20px;
+    min-height: 80vh;
+    width: 100%;
+}
+.bodyCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
