@@ -16,7 +16,8 @@ import {
 import { ShoppingCart } from "../ShoppingCart/ShoppingCart"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-// import Styles from "./Navbar.module.css"
+
+import Styles from "./Navbar.module.css"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -57,8 +58,9 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 export function Navbar() {
-  const cartCount = 1; // Replace with actual cart count logic
+  // const cartCount = 1; // Replace with actual cart count logic
   return (
+    <div className={Styles.navbarContainer}>
     <NavigationMenu style={{zIndex:1}} viewport={false}>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -195,13 +197,16 @@ export function Navbar() {
         </NavigationMenuItem>
         
       </NavigationMenuList>
- <div className="relative ml-auto flex items-center">
-        <Button
+ {/* <div className="relative ml-auto flex items-center"> */}
+ <div>
+
+        {/* <Button
           variant="ghost"
           size="icon"
           className="relative"
           aria-label="Shopping cart"
         >
+          
           <CartIcon className="w-6 h-6 text-gray-800" />
           {cartCount > 0 && (
             <Badge
@@ -211,13 +216,13 @@ export function Navbar() {
               {cartCount}
             </Badge>
           )}
-        </Button>
+        </Button> */}
 
         {/* Example Dropdown (replace with your <ShoppingCart/> component) */}
         <div className="absolute right-0 top-12 w-64 bg-white border border-gray-200 rounded-lg shadow-lg hidden group-hover:block">
           <div className="p-4">
             <h3 className="font-semibold mb-2">Cart Preview</h3>
-            <ShoppingCart />
+            
             <div className="mt-4 flex justify-between">
               <Link href="/cart">
                 <Button variant="secondary" size="sm">View Cart</Button>
@@ -230,6 +235,10 @@ export function Navbar() {
         </div>
       </div>
     </NavigationMenu>
+      <div className={Styles.shoppingCartButtonMain}>
+  <ShoppingCart />
+  </div>
+    </div>
   )
 }
 
