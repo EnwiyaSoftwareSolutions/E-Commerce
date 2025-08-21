@@ -23,7 +23,7 @@ import Styles from './ProductCard.module.css'
 
 export function ProductCard() {
   const [currentPage, setCurrentPage] = React.useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
   const totalItems = productItems.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -39,21 +39,32 @@ export function ProductCard() {
 
   return (
     <>
-      <div className={Styles.productGrid}>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4"
+        style={{ width: "100%" }}
+      >
         {currentItems.map((item, index) => (
-          <Card key={index} className="w-full max-w-sm mb-4">
+          <Card
+            key={index}
+            className="bg-white shadow-lg rounded-xl transition-transform hover:scale-105 flex flex-col justify-between"
+            style={{ minHeight: "320px" }}
+          >
             <CardHeader>
-              <CardTitle>{item.name}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardTitle className="text-lg font-semibold mb-1">{item.name}</CardTitle>
+              <CardDescription className="mb-2 text-gray-500">{item.description}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div>Price: ${item.price}</div>
-              <div>Brand: {item.brand}</div>
-              <div>Category: {item.category}</div>
+              <div className="mb-2 text-xl font-bold text-pink-600">${item.price}</div>
+              <div className="mb-1 text-sm text-gray-700">Brand: {item.brand}</div>
+              <div className="mb-1 text-sm text-gray-700">Category: {item.category}</div>
             </CardContent>
-            <CardFooter className="flex-row gap-2">
-              <Button type="button" className="w-small">Favorite</Button>
-              <Button variant="outline" className="w-small">Add To Cart</Button>
+            <CardFooter className="flex gap-2 mt-auto">
+              <Button type="button" className="w-small" style={{ background: "#f472b6", color: "white" }}>
+                Favorite
+              </Button>
+              <Button variant="outline" className="w-small">
+                Add To Cart
+              </Button>
             </CardFooter>
           </Card>
         ))}
