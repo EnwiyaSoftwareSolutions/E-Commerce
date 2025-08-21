@@ -23,7 +23,7 @@ import Styles from './ProductCard.module.css'
 
 export function ProductCard() {
   const [currentPage, setCurrentPage] = React.useState(1);
-  const itemsPerPage = 12;
+  const itemsPerPage = 16;
   const totalItems = productItems.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -46,7 +46,7 @@ export function ProductCard() {
         {currentItems.map((item, index) => (
           <Card
             key={index}
-            className="bg-white shadow-lg rounded-xl transition-transform hover:scale-105 flex flex-col justify-between"
+            className="bg-white shadow-lg rounded-xl transition-transform hover:scale-102 flex flex-col justify-between"
             style={{ minHeight: "320px" }}
           >
             <CardHeader>
