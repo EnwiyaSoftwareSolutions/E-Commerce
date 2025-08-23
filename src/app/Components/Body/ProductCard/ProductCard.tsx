@@ -19,9 +19,22 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination"
+import useShoppingCart from '@/store/useShoppingCart'
 import Styles from './ProductCard.module.css'
 
+type ProductItem = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  brand: string;
+  category: string;
+  // Add any other fields present in your productItems
+};
+
 export function ProductCard() {
+//   const [cartItems, setCartItems] = React.useState<ProductItem[]>([]);
+const { addToCart } = useShoppingCart();
   const [currentPage, setCurrentPage] = React.useState(1);
   const itemsPerPage = 16;
   const totalItems = productItems.length;
@@ -30,12 +43,22 @@ export function ProductCard() {
   const startIdx = (currentPage - 1) * itemsPerPage;
   const endIdx = startIdx + itemsPerPage;
   const currentItems = productItems.slice(startIdx, endIdx);
+  
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
     }
   };
+
+  const storeItemToCart = (item: typeof productItems[0]) => {
+    // Convert item.id to string to match CartItem type
+    const cartItem = { ...item, id: String(item.id) };
+    // If you have cartItems in state, ensure their id is string too
+    // if (!cartItems.find(cartItem => cartItem.id === cartItem.id)) {
+        addToCart(cartItem);
+    // }
+}
 
   return (
     <>
@@ -46,15 +69,15 @@ export function ProductCard() {
         {currentItems.map((item, index) => (
           <Card
             key={index}
-            className="bg-white shadow-lg rounded-xl transition-transform hover:scale-102 flex flex-col justify-between"
-            style={{ minHeight: "320px" }}
+            className="shadow-lg rounded-xl transition-transform hover:scale-102 flex flex-col justify-between"
+            style={{ minHeight: "320px", backgroundColor: "var(--color-primary-foreground)" }}
           >
             <CardHeader>
               <CardTitle className="text-lg font-semibold mb-1">{item.name}</CardTitle>
               <CardDescription className="mb-2 text-gray-500">{item.description}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="mb-2 text-xl font-bold text-pink-600">${item.price}</div>
+              <div className="mb-2 text-xl font-bold" style={{ color: 'var(--font-color)' }}>${item.price}</div>
               <div className="mb-1 text-sm text-gray-700">Brand: {item.brand}</div>
               <div className="mb-1 text-sm text-gray-700">Category: {item.category}</div>
             </CardContent>
@@ -62,7 +85,7 @@ export function ProductCard() {
               <Button type="button" className="w-small" style={{ background: "#f472b6", color: "white" }}>
                 Favorite
               </Button>
-              <Button variant="outline" className="w-small">
+              <Button onClick={() => storeItemToCart(item)} variant="outline" className="w-small">
                 Add To Cart
               </Button>
             </CardFooter>

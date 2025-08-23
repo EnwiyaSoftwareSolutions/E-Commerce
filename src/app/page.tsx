@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Navbar/>
       <Header/>
-      <Body/>
+      <Body />
       {/* <ShoppingCart /> can be used to open the shopping cart sheet */}
       {/* <SheetDemo /> can be used to demonstrate the sheet functionality */}
       <Footer/>
