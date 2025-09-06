@@ -18,16 +18,19 @@ import {
 import Styles from "./shoppingCart.module.css"
 import shoppingCart from '../../../store/useShoppingCart'
 
-type CartItem = {
+  type CartItem = {
   id: string;
   name: string;
   brand: string;
   price: number;
   imageUrl: string;
+
 };
 
+
 export function ShoppingCart() {
-    const { cartItems } = shoppingCart();
+
+    const { cartItems } = shoppingCart() as {cartItems:CartItem[]};
     const cartCount = cartItems ? cartItems.length : 0; 
     console.log(cartItems);
   return (
@@ -56,21 +59,26 @@ export function ShoppingCart() {
         </SheetHeader>
         <ScrollArea className="h-[55vh] w-[380px] rounded-md border p-.5">
         
-      {cartItems && cartItems.map((item: any, index: number) => (
-        // Example product card, replace with dynamic cart items
-        <div key={index} className="grid gap-6 px-2 py-2">
-          <div style={{background:"var(--color-card)"}} className="flex items-center gap-4 rounded-lg shadow p-4">
-            <img src="https://placehold.co/80x80" alt="Product" className="rounded-lg w-20 h-20 object-cover" />
-            <div className="flex-1">
-              <div className="font-semibold text-lg">{item.name}</div>
-              <div className="text-gray-500 text-sm">{item.brand}</div>
-              <div className="text-pink-600 font-bold mt-1">${item.price}</div>
+    {cartItems.map((item, index) => (
+            <div key={item.id ?? index} className="grid gap-6 px-2 py-2">
+              <div
+                style={{ background: "var(--color-card)" }}
+                className="flex items-center gap-4 rounded-lg shadow p-4"
+              >
+                <img
+                  src={item.imageUrl || "https://placehold.co/80x80"}
+                  alt={item.name}
+                  className="rounded-lg w-20 h-20 object-cover"
+                />
+                <div className="flex-1">
+                  <div className="font-semibold text-lg">{item.name}</div>
+                  <div className="text-gray-500 text-sm">{item.brand}</div>
+                  <div className="text-pink-600 font-bold mt-1">${item.price}</div>
+                </div>
+                <Button variant="outline" size="sm">Remove</Button>
+              </div>
             </div>
-            <Button variant="outline" size="sm">Remove</Button>
-          </div>
-        </div>
-        // End example product card
-      ))}
+          ))}
         
          </ScrollArea>
         <div className="flex justify-between items-center px-4 py-2 border-t mt-4">

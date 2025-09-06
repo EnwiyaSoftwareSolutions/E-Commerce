@@ -12,33 +12,31 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Styles from './HeadderCarosuel.module.css'
+import Image from "../../../../utils/BannerItems.json"
 
 export function HeadderCarousel() {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false })
-  )
+  );
 
   return (
-    <div className={Styles.carouselOuter}>
+    <div className="">
       <Carousel
         plugins={[plugin.current]}
         className={Styles.headderMainContainer}
-        style={{ width: "99vw", maxWidth: "100%", position: "relative", zIndex: 0, background:"var(--color-background)" }}
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        style={{ width: "99vw", maxWidth: "100%", position: "relative", zIndex: 0, background: "var(--color-background)" }}
+        // onMouseEnter={plugin.current.stop}
+        // onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className={Styles.headderCarouselContainer}>
-          {Array.from({ length: 5 }).map((_, index) => (
+        <CarouselContent className="">
+          {Image.data.map((item: any, index: number) => (
             <CarouselItem key={index}>
-                                    <img src={"https://nyc.cloud.appwrite.io/v1/storage/buckets/68a95b9000293d9930c1/files/68a95baa0028d282a523/view?project=68a95778000eb1cc29de&mode=admin"}/>
-
-              <div className={Styles.carouselItemWrapper}>
-                <Card className={Styles.headderCardContainer}>
-                  <CardContent className="flex aspect-square items-center justify-center p-0">
-                    {/* <span className="text-4xl font-semibold text-white drop-shadow-lg">{index + 1}</span> */}
-                  </CardContent>
-                </Card>
-              </div>
+              <img
+                className={Styles.carouselImage}
+                src={item.resource}
+                alt={`Slide ${index + 1}`}
+              />
+              <div className={Styles.carouselItemWrapper}></div>
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -48,7 +46,7 @@ export function HeadderCarousel() {
         </div>
       </Carousel>
     </div>
-  )
+  );
 }
 
 // "use client"

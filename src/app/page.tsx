@@ -3,12 +3,14 @@ import { Navbar } from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Body from "./Components/Body/Body";
 import Header from "./Components/Headder/Headder";
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
       <Navbar/>
       <Header/>
       <Body />
+      {/* <Link href="/LoginForm">Login</Link> */}
       {/* <ShoppingCart /> can be used to open the shopping cart sheet */}
       {/* <SheetDemo /> can be used to demonstrate the sheet functionality */}
       <Footer/>

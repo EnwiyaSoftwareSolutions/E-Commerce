@@ -15,6 +15,10 @@ import {
 } from "@/components/ui/navigation-menu"
 import { ShoppingCart } from "../ShoppingCart/ShoppingCart"
 import { Button } from "@/components/ui/button"
+    // import Link from "next/link";
+
+
+
 import { Badge } from "@/components/ui/badge"
 
 import Styles from "./Navbar.module.css"
@@ -58,6 +62,11 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 export function Navbar() {
+      // const router = useRouter();
+
+      // const navigateToDashboard = () => {
+      //   router.push("/login");
+      // };
   // const cartCount = 1; // Replace with actual cart count logic
   return (
     <div className={Styles.navbarContainer}>
@@ -195,6 +204,13 @@ export function Navbar() {
            
           </NavigationMenuContent> 
         </NavigationMenuItem>
+                <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    {/* <button onClick={navigateToDashboard}>Login</button> */}
+ <Link href="/login">Login</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        
         
       </NavigationMenuList>
  {/* <div className="relative ml-auto flex items-center"> */}

@@ -1,0 +1,20 @@
+
+{
+    "data": [
+        {
+            "resource": "https://nyc.cloud.appwrite.io/v1/storage/buckets/68a95b9000293d9930c1/files/68bb4b0d0033c0a48f41/view?project=68a95778000eb1cc29de&mode=admin",
+            "owner": "typescript",
+            "code": {}
+        },
+        {
+            "resource": "https://nyc.cloud.appwrite.io/v1/storage/buckets/68a95b9000293d9930c1/files/68bb4b1600388eb675e2/view?project=68a95778000eb1cc29de&mode=admin",
+            "owner": "typescript",
+            "code": {}
+        },
+        {
+            "resource": "https://nyc.cloud.appwrite.io/v1/storage/buckets/68a95b9000293d9930c1/files/68a95baa0028d282a523/view?project=68a95778000eb1cc29de&mode=admin",
+            "owner": "typescript",
+            "code": {}
+        }
+    ]
+}
